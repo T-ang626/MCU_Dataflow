@@ -1,5 +1,23 @@
+# 编译生成目录
 build/
-.vscode/
-*.elf
+Debug/
+Release/
+
+# 编译产物
 *.o
+*.d
+*.elf
+*.bin
+*.hex
 *.map
+*.lst
+
+# 编辑器与 IDE 缓存文件
+.vscode/
+.settings/
+.clangd
+*.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
