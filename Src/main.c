@@ -25,6 +25,7 @@ int main(void){
         uart_cmd_tick();
         if (!tick_flag) continue;
         tick_flag = 0;
+        tick_flag = 0;
         uint8_t pressed = (GPIOA_IDR & (1U << 0)) ? 0U : 1U;
         FSM_update(pressed);
         led_tick();
